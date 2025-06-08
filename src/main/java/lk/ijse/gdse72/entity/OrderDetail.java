@@ -9,7 +9,7 @@ import lombok.*;
 @Table(name = "order_detail")
 @Getter
 @Setter
-@ToString
+//@ToString
 //@AllArgsConstructor
 @NoArgsConstructor
 public class OrderDetail {

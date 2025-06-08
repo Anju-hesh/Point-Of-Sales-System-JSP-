@@ -11,7 +11,7 @@ import java.util.List;
 @Table(name = "item")
 @Getter
 @Setter
-@ToString
+//@ToString
 @AllArgsConstructor
 @NoArgsConstructor
 public class Item {

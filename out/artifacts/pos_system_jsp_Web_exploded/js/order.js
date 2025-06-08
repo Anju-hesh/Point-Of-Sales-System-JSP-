@@ -63,6 +63,7 @@ function generateNewOrderCode() {
                 method: "GET",
                 dataType: "json",
                 success: function (item) {
+                    console.log("Fetched Item Details:", item);
                     $("#orderItemName").val(item.name);
                     $("#orderItemPrice").val(item.price);
                     $("#orderQtyOnHand").val(item.qtyOnHand)
@@ -460,7 +461,8 @@ function removeItem(index) {
 
 $("#orderId").on("keypress", function (e) {
     if (e.which === 13) {
-        const orderId = $(this).val();
+        const orderId = $("#orderId").val();
+        console.log("Order ID entered:", orderId);
 
         if (!orderId) {
             alert("Please enter an order ID.");

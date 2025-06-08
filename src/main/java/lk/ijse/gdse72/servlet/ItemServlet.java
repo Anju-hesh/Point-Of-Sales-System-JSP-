@@ -72,6 +72,7 @@ public class ItemServlet extends HttpServlet {
             if (itemCode != null && !itemCode.isEmpty()) {
 
                 ItemDTO item = ITEMBO.getItem(itemCode);
+                System.out.println("Retrieved item: " + item);
 
                 if (item != null) {
                     objectMapper.writeValue(response.getWriter(), item);

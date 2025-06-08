@@ -63,6 +63,7 @@ function generateNewOrderCode() {
                 method: "GET",
                 dataType: "json",
                 success: function (item) {
+                    console.log("Fetched Item Details:", item);
                     $("#orderItemName").val(item.name);
                     $("#orderItemPrice").val(item.price);
                     $("#orderQtyOnHand").val(item.qtyOnHand)

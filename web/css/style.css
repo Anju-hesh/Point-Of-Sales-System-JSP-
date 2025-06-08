@@ -288,7 +288,6 @@ input{
     transform: translateY(-1px);
 }
 
-/* Primary Button */
 #saveButton, #saveItemButton, #updateItem {
     background: var(--gradient-primary);
     color: white;
@@ -298,7 +297,6 @@ input{
     box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
 }
 
-/* Secondary Button */
 #getCustomers, #getItems, #getOrders {
     background: var(--gradient-secondary);
     color: white;
@@ -308,7 +306,6 @@ input{
     box-shadow: 0 10px 25px rgba(240, 147, 251, 0.4);
 }
 
-/* Success Button */
 .btn-success, #purchaseBtn {
     background: var(--gradient-success);
     color: white;
@@ -318,7 +315,6 @@ input{
     box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
 }
 
-/* Danger Button */
 .btn-danger, #addItemBtn {
     background: var(--gradient-secondary);
     color: white;
@@ -335,7 +331,6 @@ input{
     margin-top: 1rem;
 }
 
-/* Table Styles */
 .table-section {
     background: var(--glass-bg);
     backdrop-filter: blur(20px);
@@ -407,7 +402,6 @@ table tbody tr:last-child td, .order-table tbody tr:last-child td {
     border-bottom: none;
 }
 
-/* Order Specific Styles */
 .invoice-container {
     display: flex;
     flex-direction: column;
@@ -469,7 +463,6 @@ table tbody tr:last-child td, .order-table tbody tr:last-child td {
     transform: scale(1.1);
 }
 
-/* Error Styles */
 .error {
     color: #ff6b6b;
     font-size: 0.875rem;
@@ -477,7 +470,6 @@ table tbody tr:last-child td, .order-table tbody tr:last-child td {
     font-weight: 500;
 }
 
-/* Animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -509,12 +501,10 @@ table tbody tr:last-child td, .order-table tbody tr:last-child td {
     }
 }
 
-/* Loading Animation */
 .loading {
     animation: pulse 1.5s ease-in-out infinite;
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
     .ordeContainer {
         grid-template-columns: 1fr;
@@ -594,7 +584,6 @@ table tbody tr:last-child td, .order-table tbody tr:last-child td {
     }
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -613,35 +602,33 @@ table tbody tr:last-child td, .order-table tbody tr:last-child td {
     background: var(--primary-dark);
 }
 
-/* Selection Styles */
 ::selection {
     background: rgba(102, 126, 234, 0.3);
     color: white;
 }
 
-::-moz-selection {
-    background: rgba(102, 126, 234, 0.3);
-    color: white;
-}
+/*::-moz-selection {*/
+/*    background: rgba(102, 126, 234, 0.3);*/
+/*    color: white;*/
+/*}*/
 
-/* Print Styles */
-@media print {
-    body {
-        background: white;
-        color: black;
-    }
+/*@media print {*/
+/*    body {*/
+/*        background: white;*/
+/*        color: black;*/
+/*    }*/
 
-    .navbar {
-        display: none;
-    }
+/*    .navbar {*/
+/*        display: none;*/
+/*    }*/
 
-    .section, .form-section, .table-section {
-        background: white;
-        border: 1px solid #ccc;
-        box-shadow: none;
-    }
+/*    .section, .form-section, .table-section {*/
+/*        background: white;*/
+/*        border: 1px solid #ccc;*/
+/*        box-shadow: none;*/
+/*    }*/
 
-    .btn, button[type="button"] {
-        display: none;
-    }
-}
+/*    .btn, button[type="button"] {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
